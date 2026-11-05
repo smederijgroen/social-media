@@ -17,6 +17,7 @@ jobs:
       - run: npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: node tools/render.js
+      - run: node tools/reel.js
       - run: if ls jobs/probe-* >/dev/null 2>&1; then node tools/probe.js; rm -f jobs/probe-*; fi
       - name: Bewaar resultaat
         run: |
