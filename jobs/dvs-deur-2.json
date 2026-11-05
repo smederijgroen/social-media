@@ -1,0 +1,8 @@
+{"id":"dvs-deur-2","type":"reel","brand":"dvs","logoHeight":130,"url":"https://app.smederijpapendrecht.nl/embed/configurator-3d?brand=dvs","cta":"deurenvanstaal.com","firstWait":15000,"scenes":[
+{"text":"Jouw stalen deur, eerst in 3D","wait":1000},
+{"text":"Kies je opstelling","do":[{"click":"Dubbele deuren"}],"wait":3000},
+{"text":"Kies het type deur","do":[{"click":"Taatsdeur"}],"wait":3000},
+{"hero":true,"text":"Daar staat hij al","do":[{"click":"Start in 3D"}],"wait":28000},
+{"text":"Kies model en kleur","do":[{"click":"2. Vormgeving"}],"wait":8000},
+{"hero":true,"text":"Bekijk hem vanuit de andere ruimte","do":[{"click":"Woonkamer","exact":true}],"wait":10000},
+{"text":"Stel hem zelf samen op deurenvanstaal.com","do":[{"click":"3. Overzicht"}],"wait":8000,"dur":3.5}]}
