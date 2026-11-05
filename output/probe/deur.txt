@@ -1,0 +1,131 @@
+Rechte bovenzijde
+Getoogde bovenzijde
+01 Enkele deur ± 900 mm breed
+02 Dubbele deuren ± 1800 mm breed
+03 Deur met zijlicht ± 1350 mm breed
+04 Deur met 2 zijlichten ± 1800 mm breed
+05 Dubbele deur met 2 zijlichten ± 2700 mm breed
+06 Vast kozijn vaste pui zonder deur, ± 1200 mm breed
+07 Plattegrond uploaden Meerdere deuren? Upload je plattegrond, wij zoeken de openingen
+Sla over en stel zelf samen
+2 tips
+Keuken
+Woonkamer
+3D draaien
+Deur 1
+Deur toevoegen
+Recht
+Getoogd
+Enkele deur
+Dubbele deur
+Geen
+Links
+Rechts
+Beide
+Geen
+Aan
+Draait woonkamer in
+Draait keuken in
+DIN links
+DIN rechts
+Taats
+Scharnier
+Schuif
+Vouwwand
+Vast paneel
+Geavanceerd Vouwwand, multi-zijlichten…
+Plattegrond uploaden
+1. Opstelling & maten
+2. Vormgeving
+3. Overzicht & aanvragen
+Foto
+Offerte aanvragen
+---
+STAP 1 / 3
+
+Kies je opstelling
+
+Je past daarna alles zelf nog aan in 3D.
+
+Rechte bovenzijde
+Getoogde bovenzijde
+01
+Enkele deur
+± 900 mm breed
+02
+Dubbele deuren
+± 1800 mm breed
+03
+Deur met zijlicht
+± 1350 mm breed
+04
+Deur met 2 zijlichten
+± 1800 mm breed
+05
+Dubbele deur met 2 zijlichten
+± 2700 mm breed
+06
+Vast kozijn
+vaste pui zonder deur, ± 1200 mm breed
+07
+Plattegrond uploaden
+Meerdere deuren? Upload je plattegrond, wij zoeken de openingen
+Sla over en stel zelf samen
+2 tips
+ZIJLICHT
+0
+ZIJLICHT
+0
+Keuken
+Woonkamer
+3D draaien
+Deur 1
+Deur toevoegen
+Deur 1 — Enkel (1000 × 2400)
+Dagmaat
+BREEDTE
+1000 mm
+mm
+Recht
+Getoogd
+HOOGTE
+2400 mm
+mm
+
+AANTAL DEUREN
+
+Enkele deur
+Dubbele deur
+
+ZIJLICHTEN
+
+Geen
+Links
+Rechts
+Beide
+Breedte per zijlicht
+
+Voeg eerst een zijlicht toe bij "Deurtype".
+
+Bovenlicht
+Geen
+Aan
+DRAAIRICHTING
+Draait woonkamer in
+Draait keuken in
+DIN links
+DIN rechts
+Mechanisme
+Taats
+Scharnier
+Schuif
+Vouwwand
+Vast paneel
+Geavanceerd
+Vouwwand, multi-zijlichten…
+Plattegrond uploaden
+1. Opstelling & maten
+2. Vormgeving
+3. Overzicht & aanvragen
+Foto
+Offerte aanvragen
