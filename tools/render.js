@@ -3,17 +3,13 @@ const {chromium}=require('playwright');const fs=require('fs'),path=require('path
 const logos={dvs:'dvs',smederij:'smederij',vistamont:'vistamont'};
 const b64=f=>'data:image/png;base64,'+fs.readFileSync(f).toString('base64');
 const esc=s=>String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-function html(j,w,h){const logo=b64(`logos/${logos[j.brand]}-logo-transparant-wit.png`);const story=h>1400;
+function html(j,w,h){const logo=b64(`logos/${logos[j.brand]}-logo-transparant-zwart.png`);const story=h>1400;const top=story?250:190,ph=story?1240:930;
 return `<!doctype html><meta charset=utf-8><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel=stylesheet><style>
-*{margin:0;box-sizing:border-box}body{width:${w}px;height:${h}px;background:#0b0b0b;position:relative;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
-.p{position:absolute;inset:0;background:url("${j.image}") ${j.position||'center'}/cover}
-.g{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.4) 0,rgba(11,11,11,0) 14%,rgba(11,11,11,0) ${story?62:58}%,rgba(11,11,11,.92) ${story?82:80}%,#0b0b0b 100%)}
-.f{position:absolute;inset:32px;border:1px solid rgba(176,141,87,.75)}
-.b{position:absolute;left:0;right:0;bottom:${story?190:78}px;text-align:center}
-.b img{height:${j.logoHeight||190}px;display:block;margin:0 auto 34px}
-.l{width:64px;height:1px;background:#b08d57;margin:0 auto 22px}
-.t{font-size:20px;letter-spacing:.34em;font-weight:500;padding-left:.34em}
-</style><div class=p></div><div class=g></div><div class=f></div><div class=b><img src="${logo}"><div class=l></div><div class=t>${esc(j.line).toUpperCase()}</div></div>`}
+*{margin:0;box-sizing:border-box}body{width:${w}px;height:${h}px;background:#f7f5f1;position:relative;overflow:hidden;font-family:Inter,sans-serif;color:#111}
+.logo{position:absolute;top:${story?80:36}px;left:0;right:0;text-align:center}.logo img{height:${story?140:124}px}
+.p{position:absolute;left:0;right:0;top:${top}px;height:${ph}px;background:url("${j.image}") ${j.position||'center'}/cover;border-top:1px solid #b08d57;border-bottom:1px solid #b08d57}
+.b{position:absolute;left:0;right:0;top:${top+ph+(story?60:44)}px;text-align:center}.l{width:64px;height:2px;background:#b08d57;margin:0 auto 26px}
+.t{font-size:${story?26:24}px;letter-spacing:.3em;font-weight:500;padding-left:.3em}</style><div class=logo><img src="${logo}"></div><div class=p></div><div class=b><div class=l></div><div class=t>${esc(j.line).toUpperCase()}</div></div>`}
 (async()=>{const b=await chromium.launch();const done=[];
 for(const f of fs.readdirSync('jobs').filter(x=>x.endsWith('.json'))){const j=JSON.parse(fs.readFileSync('jobs/'+f));
  if(j.type!=='photo'||fs.existsSync(`output/${j.id}-post.jpg`))continue;
