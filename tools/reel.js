@@ -1,34 +1,43 @@
-// Neemt een live configurator op in stappen en maakt er een opgemaakte reel van (1080x1920).
-const {chromium}=require('playwright');const fs=require('fs'),{execFileSync}=require('child_process');
-const b64=(f,t='png')=>`data:image/${t};base64,`+fs.readFileSync(f).toString('base64');
-const esc=s=>String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const SCALE=900/1080;
-function frame(j,s,shot,ring){const logo=b64(`logos/${j.brand}-logo-transparant-wit.png`);
- const r=ring?`<div style="position:absolute;left:${90+ring.x*2*SCALE-46}px;top:${j.top+ring.y*2*SCALE-46}px;width:92px;height:92px;border:3px solid #b08d57;border-radius:50%;background:rgba(176,141,87,.22)"></div>`:'';
- return `<!doctype html><meta charset=utf-8><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel=stylesheet><style>*{margin:0;box-sizing:border-box}body{width:1080px;height:1920px;background:#0b0b0b;position:relative;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
-.lg{position:absolute;top:70px;left:0;right:0;text-align:center}.lg img{height:${j.logoHeight||110}px}
-.h{position:absolute;top:${70+(j.logoHeight||110)+24}px;left:70px;right:70px;text-align:center;font-size:44px;line-height:1.2;font-weight:500}
-.s{position:absolute;left:90px;top:${j.top}px;width:900px;height:${j.frameH}px;overflow:hidden;border:1px solid rgba(176,141,87,.75)}.s img{width:100%;display:block}
-.c{position:absolute;left:0;right:0;top:${j.top+j.frameH+36}px;text-align:center}.l{width:64px;height:1px;background:#b08d57;margin:0 auto 18px}.t{font-size:26px;letter-spacing:.2em;font-weight:500}</style>
-<div class=lg><img src="${logo}"></div><div class=h>${esc(s.text)}</div>${s.hero?`<div class=s style="left:0;width:1080px;height:${j.heroH||1160}px;border:0;border-top:1px solid #b08d57;border-bottom:1px solid #b08d57"><img src="${b64(shot,'jpeg')}" style="width:100%;height:100%;object-fit:cover"></div>`:`<div class=s><img src="${b64(shot,'jpeg')}"></div>`}${r}<div class=c><div class=l></div><div class=t>${esc(j.cta).toUpperCase()}</div></div>`}
-async function act(p,a){if(a.click){const ok=await p.evaluate(({t,exact})=>{const vis=[...document.querySelectorAll('button,a,[role=button]')].filter(x=>x.offsetParent);const norm=x=>x.innerText.trim().replace(/\s+/g,' ');const el=vis.find(x=>exact?norm(x)===t:norm(x).includes(t));if(!el)return false;el.scrollIntoView({block:'center'});el.click();return true},{t:a.click,exact:!!a.exact});if(!ok)throw new Error('knop niet gevonden: '+a.click)}
- if(a.pause){await p.waitForTimeout(a.pause)}
- if(a.scroll){await p.evaluate(y=>window.scrollBy(0,y),a.scroll)}return null}
-(async()=>{const jobs=fs.readdirSync('jobs').filter(x=>x.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync('jobs/'+f))).filter(j=>j.type==='reel'&&!fs.existsSync(`output/${j.id}-reel.mp4`));
- if(!jobs.length)return;const b=await chromium.launch({args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader']});
- for(const j of jobs){j.top=j.top||(70+(j.logoHeight||110)+24+130);j.frameH=1920-j.top-300;const tmp=`/tmp/${j.id}`;fs.mkdirSync(tmp,{recursive:true});const log=[];
-  const c=await b.newContext({viewport:{width:540,height:j.vh||1170},deviceScaleFactor:2,isMobile:true,hasTouch:true});const p=await c.newPage();
-  await p.goto(j.url,{timeout:120000,waitUntil:'domcontentloaded'});await p.waitForTimeout(j.firstWait||25000);
-  const v=await b.newPage({viewport:{width:1080,height:1920}});const files=[];let n=0;
-  for(const s of j.scenes){let ring=null;for(const a of (s.do||[])){try{ring=await act(p,a)||ring}catch(e){log.push('FOUT '+JSON.stringify(a)+' '+e.message.split('\n')[0])}}
-   await p.waitForTimeout(s.wait||5000);const shot=`${tmp}/s${n}.jpg`;let clip;if(s.hero){await p.addStyleTag({content:'html.onlycanvas *{visibility:hidden!important} html.onlycanvas canvas{visibility:visible!important}'}).catch(()=>{});await p.evaluate(()=>document.documentElement.classList.add('onlycanvas'));await p.waitForTimeout(600);clip=await p.evaluate(()=>{const cs=[...document.querySelectorAll('canvas')].filter(c=>c.offsetParent).sort((a,b)=>b.clientWidth*b.clientHeight-a.clientWidth*a.clientHeight);if(!cs[0])return null;const r=cs[0].getBoundingClientRect();return {x:Math.max(0,r.x),y:Math.max(0,r.y),width:r.width,height:r.height}})}await p.screenshot({path:shot,type:'jpeg',quality:92,...(clip?{clip}:{})});if(s.hero)await p.evaluate(()=>document.documentElement.classList.remove('onlycanvas'));
-   log.push(`scene ${n}: `+(await p.$$eval('button',bs=>bs.filter(x=>x.offsetParent).map(x=>x.innerText.trim().replace(/\s+/g,' ')).filter(Boolean).slice(0,45).join(' | '))));
-   await v.setContent(frame(j,s,shot,null),{waitUntil:'networkidle'});await v.waitForTimeout(300);const f=`${tmp}/f${n}.png`;await v.screenshot({path:f});files.push({f,d:s.dur||3});
-   n++}
-  await c.close();await v.close();
-  const fade=.5;const inp=[];files.forEach(x=>inp.push('-loop','1','-t',String(x.d),'-framerate','30','-i',x.f));
-  let fc='',last='0:v',off=0;for(let i=1;i<files.length;i++){off+=files[i-1].d-fade;fc+=`[${last}][${i}:v]xfade=transition=fade:duration=${fade}:offset=${off.toFixed(2)}[v${i}];`;last=`v${i}`}
-  fc+=`[${last}]format=yuv420p[out]`;const total=off+files[files.length-1].d;
-  execFileSync('ffmpeg',['-y',...inp,'-f','lavfi','-t',total.toFixed(2),'-i','anullsrc=r=44100:cl=stereo','-filter_complex',fc,'-map','[out]','-map',`${files.length}:a`,'-c:v','libx264','-preset','medium','-crf','20','-r','30','-c:a','aac','-b:a','128k','-movflags','+faststart',`output/${j.id}-reel.mp4`],{stdio:'inherit'});
-  fs.copyFileSync(files[Math.min(1,files.length-1)].f,`output/${j.id}-still.png`);fs.writeFileSync(`output/${j.id}-log.txt`,log.join('\n'));}
+// Neemt een live configurator op en monteert een dynamische reel (1080x1920, 30 fps).
+const {chromium}=require('playwright');const fs=require('fs'),path=require('path'),{spawn}=require('child_process');
+const args=['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist','--enable-unsafe-swiftshader','--allow-file-access-from-files'];
+const onlyCanvas=async(p,on)=>{if(on)await p.addStyleTag({content:'html.onlycanvas *{visibility:hidden!important} html.onlycanvas canvas{visibility:visible!important}'}).catch(()=>{});await p.evaluate(o=>document.documentElement.classList.toggle('onlycanvas',o),on)};
+const canvasClip=p=>p.evaluate(()=>{const c=[...document.querySelectorAll('canvas')].filter(x=>x.offsetParent).sort((a,b)=>b.clientWidth*b.clientHeight-a.clientWidth*a.clientHeight)[0];if(!c)return null;const r=c.getBoundingClientRect();return{x:Math.max(0,r.x),y:Math.max(0,r.y),width:r.width,height:r.height}});
+async function act(p,a){if(a.click){const ok=await p.evaluate(({t,exact})=>{const vis=[...document.querySelectorAll('button,a,[role=button]')].filter(x=>x.offsetParent);const n=x=>x.innerText.trim().replace(/\s+/g,' ');const el=vis.find(x=>exact?n(x)===t:n(x).includes(t));if(!el)return false;el.scrollIntoView({block:'center'});el.click();return true},{t:a.click,exact:!!a.exact});if(!ok)throw new Error('knop niet gevonden: '+a.click)}if(a.pause)await p.waitForTimeout(a.pause)}
+function page(j,shots){return `<!doctype html><meta charset=utf-8><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel=stylesheet><style>*{margin:0;box-sizing:border-box}html,body{width:1080px;height:1920px;background:#0b0b0b;overflow:hidden;font-family:Inter,sans-serif;color:#fff}
+.layer{position:absolute;inset:0;overflow:hidden;background:#0b0b0b}.m{position:absolute;left:0;top:0;width:1080px;height:1400px;overflow:hidden}.m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform,opacity}
+.ui .m{left:90px;top:210px;width:900px;height:1130px;border:1px solid rgba(176,141,87,.8)}.ui .m img{object-fit:cover;object-position:top}
+.sh{position:absolute;left:0;right:0;top:1040px;height:360px;background:linear-gradient(180deg,rgba(11,11,11,0),#0b0b0b)}.ui .sh{display:none}
+.tp{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,rgba(11,11,11,.72),rgba(11,11,11,0))}
+.logo{position:absolute;top:56px;left:0;right:0;text-align:center}.logo img{height:${j.logoHeight||120}px}
+.cap{position:absolute;left:70px;right:70px;top:1370px;text-align:center;font-size:58px;line-height:1.16;font-weight:500;letter-spacing:-.01em}
+.bar{position:absolute;left:50%;top:1345px;height:2px;background:#b08d57;transform:translateX(-50%)}
+.end{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0b0b0b}.end img{height:${j.endLogo||420}px;margin-bottom:64px}.end .a{font-size:58px;font-weight:500;text-align:center;line-height:1.16;padding:0 70px}.end .u{margin-top:44px;font-size:30px;letter-spacing:.24em;color:#d9bd8c}.end .l{height:2px;background:#b08d57;margin:44px 0 0}</style><div id=root></div>
+<script>const S=${JSON.stringify(shots)};const LOGO=${JSON.stringify('file://'+path.resolve(`logos/${j.brand}-logo-transparant-wit.png`))};const T=.28;
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;const out=x=>1-Math.pow(1-x,3);const cl=(x)=>Math.max(0,Math.min(1,x));
+let cache={};function img(u){if(!cache[u]){const i=new Image();i.src=u;cache[u]=i}return u}
+function layer(s,lt,dur,idx){const p=lt/dur;if(s.end){const k=out(cl(lt/.5));return '<div class=layer><div class=end><img src="'+LOGO+'" style="transform:scale('+(.94+.06*k)+');opacity:'+k+'"><div class=a style="opacity:'+cl((lt-.2)/.3)+';transform:translateY('+(24*(1-out(cl((lt-.2)/.4))))+'px)">'+s.text+'</div><div class=l style="width:'+(220*out(cl((lt-.4)/.5)))+'px"></div><div class=u style="opacity:'+cl((lt-.5)/.3)+'">'+s.cta+'</div></div></div>'}
+ let im;if(s.frames){const f=p*(s.frames.length-1);const a=Math.floor(f),b=Math.min(a+1,s.frames.length-1),w=f-a;im='<img src="'+s.frames[a]+'" style="transform:scale(1.04)"><img src="'+s.frames[b]+'" style="opacity:'+w+';transform:scale(1.04)">'}
+ else{const z=[[1,1.09,0,0],[1.09,1,0,0],[1.06,1.06,-28,28],[1.06,1.06,28,-28]][idx%4];const sc=z[0]+(z[1]-z[0])*p,x=z[2]+(z[3]-z[2])*p;im='<img src="'+s.shot+'" style="transform:scale('+(s.ui?(1+.04*p):sc)+') translateX('+(s.ui?0:x)+'px);'+(s.ui?'transform-origin:top center':'')+'">'}
+ const k=out(cl(lt/.35));return '<div class="layer '+(s.ui?'ui':'')+'"><div class=m>'+im+'<div class=sh></div></div><div class=tp></div><div class=logo><img src="'+LOGO+'"></div><div class=bar style="width:'+(120*k)+'px"></div><div class=cap style="opacity:'+k+';transform:translateY('+(30*(1-k))+'px)">'+s.text+'</div></div>'}
+function render(t){let i=0,st=0;while(i<S.length-1&&t>=st+S[i].dur){st+=S[i].dur;i++}const lt=t-st,d=S[i].dur;let h='<div style="position:absolute;inset:0">'+layer(S[i],lt,d,i)+'</div>';
+ if(i<S.length-1&&lt>d-T){const w=ease((lt-(d-T))/T),m=i%3;const a=m==0?'translateX('+(-1080*w)+'px)':m==1?'translateY('+(-1920*w)+'px)':'scale('+(1+.25*w)+')';const b=m==0?'translateX('+(1080*(1-w))+'px)':m==1?'translateY('+(1920*(1-w))+'px)':'scale('+(.9+.1*w)+')';const op=m==2?w:1;
+  h='<div style="position:absolute;inset:0;transform:'+a+';transform-origin:center">'+layer(S[i],lt,d,i)+'</div><div style="position:absolute;inset:0;opacity:'+op+';transform:'+b+'">'+layer(S[i+1],0,S[i+1].dur,i+1)+'</div>'}
+ document.getElementById('root').innerHTML=h}
+window.preload=async()=>{const u=[LOGO];S.forEach(s=>{if(s.shot)u.push(s.shot);(s.frames||[]).forEach(f=>u.push(f))});await Promise.all(u.map(x=>new Promise(r=>{const i=new Image();i.onload=i.onerror=r;i.src=x;cache[x]=i})));await document.fonts.ready};window.renderAt=render;</script>`}
+(async()=>{const jobs=fs.readdirSync('jobs').filter(x=>x.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync('jobs/'+f))).filter(j=>j.type==='reel'&&!fs.existsSync(`output/${j.id}-reel.mp4`));if(!jobs.length)return;
+ const b=await chromium.launch({args});
+ for(const j of jobs){const tmp=path.resolve(`.tmp-${j.id}`);fs.mkdirSync(tmp,{recursive:true});const log=[];const c=await b.newContext({viewport:{width:540,height:j.vh||1000},deviceScaleFactor:2,isMobile:true,hasTouch:true});const p=await c.newPage();
+  await p.goto(j.url,{timeout:120000,waitUntil:'domcontentloaded'});await p.waitForTimeout(j.firstWait||25000);const shots=[];
+  for(let n=0;n<j.capture.length;n++){const s=j.capture[n];for(const a of(s.do||[])){try{await act(p,a)}catch(e){log.push(`FOUT ${n} ${e.message}`)}}await p.waitForTimeout(s.wait||4000);const o={ui:!s.hero&&!s.orbit};
+   if(s.orbit){await onlyCanvas(p,true);await p.waitForTimeout(300);const cl=await canvasClip(p);const x0=cl.x+cl.width*.5,y0=cl.y+cl.height*.5;await p.mouse.move(x0,y0);await p.mouse.down();o.frames=[];const st=s.orbit.steps||28,dx=s.orbit.dx||-5;for(let k=0;k<st;k++){await p.mouse.move(x0+dx*k,y0);await p.waitForTimeout(130);const f=`${tmp}/c${n}_${k}.jpg`;await p.screenshot({path:f,type:'jpeg',quality:88,clip:cl});o.frames.push('file://'+f)}await p.mouse.up();await onlyCanvas(p,false)}
+   else{let clip;if(s.hero){await onlyCanvas(p,true);await p.waitForTimeout(400);clip=await canvasClip(p)}const f=`${tmp}/c${n}.jpg`;await p.screenshot({path:f,type:'jpeg',quality:92,...(clip?{clip}:{})});if(s.hero)await onlyCanvas(p,false);o.shot='file://'+f}
+   shots.push(o);log.push(`capture ${n} ok`)}
+  await c.close();
+  const seq=j.play.map(e=>e.end?{end:true,text:e.text,cta:j.cta,dur:e.dur||2.6}:{...shots[e.c],text:e.text,dur:e.dur||1.7});
+  const html=`${tmp}/index.html`;fs.writeFileSync(html,page(j,seq));const v=await b.newPage({viewport:{width:1080,height:1920}});await v.goto('file://'+html,{waitUntil:'load'});await v.evaluate(()=>window.preload());
+  const dur=seq.reduce((a,s)=>a+s.dur,0);const fps=30,N=Math.round(dur*fps);const out=`output/${j.id}-reel.mp4`,music=fs.existsSync('music/track.mp3')?'music/track.mp3':null;
+  const ff=['-y','-f','image2pipe','-framerate',String(fps),'-c:v','mjpeg','-i','-',...(music?['-stream_loop','-1','-ss',String(j.musicStart||0),'-i',music]:['-f','lavfi','-i','anullsrc=r=44100:cl=stereo']),'-t',dur.toFixed(2),'-map','0:v','-map','1:a',...(music?['-af',`volume=0.85,afade=t=out:st=${(dur-1.2).toFixed(2)}:d=1.2`]:[]),'-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-r',String(fps),'-c:a','aac','-b:a','160k','-movflags','+faststart',out];
+  const pr=spawn('ffmpeg',ff,{stdio:['pipe','inherit','inherit']});for(let i=0;i<N;i++){await v.evaluate(t=>window.renderAt(t),i/fps);const buf=await v.screenshot({type:'jpeg',quality:90});if(!pr.stdin.write(buf))await new Promise(r=>pr.stdin.once('drain',r))}pr.stdin.end();await new Promise(r=>pr.on('close',r));await v.close();
+  fs.writeFileSync(`output/${j.id}-log.txt`,log.join('\n'));fs.rmSync(tmp,{recursive:true,force:true})}
  await b.close()})().catch(e=>{console.error(e);process.exit(1)});
