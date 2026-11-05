@@ -1,6 +1,0 @@
-{"id":"dvs-probe-model","type":"reel","brand":"dvs","logoHeight":130,"url":"https://app.smederijpapendrecht.nl/embed/configurator-3d?brand=dvs","cta":"deurenvanstaal.com","firstWait":15000,"scenes":[
-{"text":"a","do":[{"click":"Enkele deur"}],"wait":2500},
-{"text":"b","do":[{"click":"Taatsdeur"}],"wait":2500},
-{"hero":true,"text":"c","do":[{"click":"Start in 3D"}],"wait":30000},
-{"text":"d","do":[{"click":"2. Vormgeving"}],"wait":5000},
-{"text":"e","do":[{"click":"Kies een model"}],"wait":6000}]}

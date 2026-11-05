@@ -1,8 +1,0 @@
-{"id":"vistamont-balustrade-2","type":"reel","brand":"vistamont","url":"https://app.smederijpapendrecht.nl/embed-balustrade.html?brand=vistamont","cta":"vistamont.nl","scenes":[
-{"hero":true,"text":"Frameloos glas op je balkon? Bekijk het eerst in 3D","do":[{"click":"Balkon","exact":true}],"wait":6000},
-{"hero":true,"text":"Zo kijk je straks naar buiten","do":[{"click":"Uitzicht","exact":true}],"wait":7000},
-{"hero":true,"text":"En zo ziet het detail eruit","do":[{"click":"Detail","exact":true}],"wait":7000},
-{"text":"Kies de vorm en je maten","do":[{"click":"Buiten","exact":true},{"click":"Volgende","exact":true}],"wait":6000},
-{"text":"Kies je systeem","do":[{"click":"Volgende","exact":true}],"wait":6000},
-{"hero":true,"text":"Helder, getint of mat: jij kiest","do":[{"click":"Volgende","exact":true},{"click":"Brons getint","exact":true}],"wait":7000},
-{"hero":true,"text":"Stel hem zelf samen op vistamont.nl","do":[{"click":"Helder","exact":true}],"wait":6000,"dur":3.5}]}
