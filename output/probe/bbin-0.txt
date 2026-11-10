@@ -1,0 +1,216 @@
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/balustrade-binnen
+PTR:
+CANVAS 
+SHADOW 0
+BODY:
+Delen
+FRAME https://app.smederijpapendrecht.nl/balustrade-binnen/index.html
+PTR:
+BUTTON: OVERLOOP
+BUTTON: OVERLOOP SCHUIN
+BUTTON: BOVENAAN
+BUTTON: DETAIL
+BUTTON: BENEDEN
+BUTTON: TRAP
+SPAN: Overloop of vide
+SMALL: Balustrade langs het gat in de vloer
+SPAN: Vide met trap
+SMALL: Overloop + schuin op de trap
+SPAN: Alleen de trap
+SMALL: Schuine leuning op de trapboom
+SPAN: Rijtjeshuis
+SMALL: Trapgat, verdieping 2,75 m
+SPAN: Jaren-30 woning
+SMALL: Kwartdraai, eiken visgraat
+SPAN: Nieuwbouw / 2-onder-1-kap
+SMALL: Open trap, lichte plankvloer
+SPAN: Vrijstaand / villa
+SMALL: Hoge verdieping, stalen pui
+SPAN: Herenhuis / stadswoning
+SMALL: Hoge verdieping 3,2 m, kwartdraai
+SPAN: Zolder met vaste trap
+SMALL: Trapgat onder het schuine dak
+SPAN: Loft / appartement met entresol
+SMALL: Stalen steektrap, hoge ruimte
+SPAN: Split-level
+SMALL: Halve verdieping, 8 treden
+BUTTON: Recht, haaks op overloop
+BUTTON: Kwartdraai met bordes
+BUTTON: Halve draai
+BUTTON: Dicht, wit
+BUTTON: Open treden
+BUTTON: Stalen trapbomen
+BUTTON: Middenboom
+BUTTON: Gezet staal
+BUTTON: Eiken
+BUTTON: Gerookt eiken
+BUTTON: Wit
+BUTTON: Antraciet
+BUTTON: Staal
+BUTTON: Links
+BUTTON: Rechts
+BUTTON: Links
+BUTTON: Achter
+BUTTON: Langs boom
+BUTTON: Horizontaal
+SPAN: Spijlen
+SMALL: □ 20 mm
+SPAN: Ronde spijlen
+SMALL: Ø 16 mm
+SPAN: Platstaal
+SMALL: 40×8 staand
+SPAN: Dubbele spijlen
+SMALL: 2 × □ 12 mm
+SPAN: RVS staafjes
+SMALL: Ø 12 mm geborsteld
+SPAN: Ladder
+SMALL: spijlen + 2 regels
+SMALL: klimbaar, niet voor nieuwbouw
+SPAN: Spijlen met bol
+SMALL: bol halverwege
+SPAN: Korfspijlen
+SMALL: mandje om de 2
+SPAN: Ovalen
+SMALL: ovaal tussen spijlen
+SPAN: Liggend
+SMALL: strip 30×8
+SMALL: klimbaar, niet voor nieuwbouw
+SPAN: Lamellen
+SMALL: plat 60×8, 30°
+SPAN: RVS kabels
+SMALL: Ø 6 mm liggend
+SMALL: klimbaar, niet voor nieuwbouw
+SPAN: Draadstaal
+SMALL: gaas 50×50 in kader
+SPAN: Geperforeerd
+SMALL: plaat met gaatjes
+SPAN: Vierkant geponst
+SMALL: 12×12 mm, steek 16
+SPAN: Kruis
+SMALL: plat in X per vak
+SMALL: klimbaar, niet voor nieuwbouw
+SPAN: Mikado
+SMALL: schuine staven
+SMALL: klimbaar, niet voor nieuwbouw
+SPAN: Gedraaid
+SMALL: getordeerd + bol
+SPAN: Ringen
+SMALL: spijlen met ringen
+SPAN: Krullen
+SMALL: C-krullen boven
+SPAN: Dichte plaat
+SMALL: staalplaat 3 mm in kader
+SPAN: Lasercut patroon
+SMALL: plaat met eigen motief
+SPAN: Glas
+SMALL: kies het systeem
+SPAN: Glas met roeden
+SMALL: stalen roeden in glas
+SPAN: RAL 9005
+SPAN: RAL 7021
+SPAN: RAL 7016
+SPAN: RAL 9010 Wit
+SPAN: Dark Bronze C34
+SPAN: Stainless Steel C31
+BUTTON: Koker 40
+BUTTON: Plat 50×10
+BUTTON: Rond 42
+BUTTON: Op de vloer
+BUTTON: Op de vloerrand
+BUTTON: Uit
+BUTTON: Aan
+BUTTON: Ochtendzon
+BUTTON: Avond
+BUTTON: Offerte aanvragen
+SPAN: 01
+B: Overloop of vide
+SMALL: Balustrade langs het gat in de vloer
+SPAN: 02
+B: Vide met trap
+SMALL: Overloop + schuin op de trap
+SPAN: 03
+B: Alleen de trap
+SMALL: Schuine leuning op de trapboom
+BUTTON: Direct naar de 3D
+CANVAS 540x520
+SHADOW 0
+BODY:
+Nieuwbouw / 2-onder-1-kap, vide met trap
+OVERLOOP
+OVERLOOP SCHUIN
+BOVENAAN
+DETAIL
+BENEDEN
+TRAP
+1. Wat laat je maken?
+Overloop of vide
+Balustrade langs het gat in de vloer
+Vide met trap
+Overloop + schuin op de trap
+Alleen de trap
+Schuine leuning op de trapboom
+2. Woning
+Rijtjeshuis
+Trapgat, verdieping 2,75 m
+Jaren-30 woning
+Kwartdraai, eiken visgraat
+Nieuwbouw / 2-onder-1-kap
+Open trap, lichte plankvloer
+Vrijstaand / villa
+Hoge verdieping, stalen pui
+Herenhuis / stadswoning
+Hoge verdieping 3,2 m, kwartdraai
+Zolder met vaste trap
+Trapgat onder het schuine dak
+Loft / appartement met entresol
+Stalen steektrap, hoge ruimte
+Split-level
+Halve verdieping, 8 treden
+3. Trap
+VORM
+Recht, haaks op overloop
+Kwartdraai met bordes
+Halve draai
+CONSTRUCTIE
+Dicht, wit
+Open treden
+Stalen trapbomen
+Middenboom
+Gezet staal
+TREDEN
+Eiken
+Gerookt eiken
+Wit
+Antraciet
+Staal
+4. Maten
+GAT IN DE VLOER
+Balustrade voorzijde
+mm
+Lengte trapgat
+mm
+TRAP GAAT NAAR BENEDEN AAN DE
+Links
+Rechts
+BALUSTRADE OOK AAN
+Links
+Achter
+Rechts
+TRAPMATEN
+Verdiepingshoogte
+mm
+Optreden
+st.
+Aantrede
+mm
+Trapbreedte
+mm
+SCHUINE BALUSTRADE OP DE TRAPBOOM
+Lengte (0 = hele trap)
+mm
+Gemeten
+Langs boom
+Horizontaal
+
+Optrede 186,7 mm, aantrede 23
