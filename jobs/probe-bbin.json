@@ -1,0 +1,1 @@
+{"name":"bbin","deep":true,"url":"https://app.smederijpapendrecht.nl/embed/balustrade-binnen","wait":30000,"walk":[{"click":"Overloop of vide","wait":10000},{"click":"Direct naar de 3D","wait":15000,"hero":true}]}
