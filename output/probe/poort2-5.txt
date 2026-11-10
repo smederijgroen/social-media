@@ -1,0 +1,110 @@
+Rustig openen
+Maten uit
+Toevoegen
+5 Overzicht en aanvraag
+Wijzig
+Wijzig
+Wijzig
+Wijzig
+Wijzig
+Wijzig
+Wijzig
+Download overzicht (PDF) voor de bouw
+Zo snel mogelijk
+Binnen 3 maanden
+Over 4 tot 6 maanden
+Nog oriënterend
+Offerte aanvragen
+Opslaan
+Delen
+Toon mijn poort in een straat
+Vorige
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/poort-configurator
+PTR:
+BUTTON: Rustig openen
+BUTTON: Maten uit
+BUTTON: Toevoegen
+SPAN: Overzicht en aanvraag
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Wijzig
+BUTTON: Download overzicht (PDF) voor de bouw
+BUTTON: Zo snel mogelijk
+BUTTON: Binnen 3 maanden
+BUTTON: Over 4 tot 6 maanden
+BUTTON: Nog oriënterend
+BUTTON: Offerte aanvragen
+BUTTON: Opslaan
+BUTTON: Delen
+BUTTON: Toon mijn poort in een straat
+SPAN: Vorige
+CANVAS 540x520
+SHADOW 0
+BODY:
+PO Amersfoort
+Rustig openen
+Maten uit
+Toevoegen
+
+STAP 5 / 5
+
+5 Overzicht en aanvraag
+Overzicht en aanvraag
+3000 mm
+2066 mm
+
+Werktekening van uw dubbele poort (zonder zijhekwerk). Maten in mm.
+
+Onderwerp
+Inrijpoort dubbel
+Wijzig
+Maten
+300 cm breed, 160 cm hoog
+Wijzig
+Model
+PO Amersfoort
+Wijzig
+Stijl
+Toog
+Wijzig
+Palen
+Stalen palen
+Wijzig
+Bediening
+Handmatig
+Wijzig
+Extra's
+Geen
+Wijzig
+
+Samenvatting
+
+Soort: Dubbele draaipoort
+Maat: 3000 × 1600 mm (10 cm boven de grond)
+Model: PO Amersfoort (ringen)
+Bovenlijn: Toog
+Sierrand: Ring
+Spijl: koker 20×20 mm, h.o.h. 110 mm
+Hekpunt: Bol
+Toog/kop: +220 mm
+Palen: staal 100×100, kap: bol
+Bediening: handmatig met scharnieren en slotkast
+Middensluitkokers: verhoogd met bol
+Kleur: Zwart (RAL 9005)
+Meer instellingen: spindlesThroughRails=true
+
+Bouwteksten
+
+Werk van links naar rechts volgens de volgorde en posities in de maattabel.
+Controleer alle netto segmentmaten en hoogtes op locatie vóór productie.
+Staanders: 100×100 mm bij poorten; hekwerkvakken maximaal 2000 mm.
+Poort: handmatig; scharnieren en slot volgens de gekozen draairichting.
+Definitieve maatvoering en bevestiging na inmeten controleren.
+Download overzicht (PDF) voor de bouw
+
+Dit ontwerp 

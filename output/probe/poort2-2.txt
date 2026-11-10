@@ -1,0 +1,327 @@
+Rustig openen
+Maten uit
+Toevoegen
+2 Model
+3
+4
+5
+PO Amersfoort
+LP Amersfoort
+HK Amersfoort
+Alle (63)
+Klassiek
+Sierwerk
+Art-deco
+Landelijk
+Modern
+Weet ik nog niet Wij adviseren u
+PO Delft klassiek speerpunt
+PO Haarlem toog met speerpunten
+PO Zeist holle toog met bollen
+PO Hilversum klokmodel met lelies
+PO Naarden speer met kragen
+PO Oosterhout spijltoog
+PO Gorinchem puntgevel
+PO Vianen strak klassiek
+PO Heusden hoog-laag met toog
+PO Amersfoort ringen
+PO Breda ring om de spijl
+PO Leiden halve ringen
+PO Utrecht gekruiste bogen
+PO Gouda C-krullen
+PO Dordrecht S-krullen
+PO Den Bosch lier van J-krullen
+PO Maastricht krullen en ringen
+PO Sliedrecht harten van C-krullen
+PO Zwijndrecht S-krullen en ringen
+PO Schoonhoven voluten en bladeren
+PO Deventer bladerrand
+PO Middelburg ringketting
+PO Kampen golfrand
+PO Alblasserdam ovalen en kragen
+PO Wassenaar zonnestraal
+PO Voorschoten dubbele ringrij
+PO Oudewater kruisjes en boogjes
+PO Leiderdorp klassieke ruiten met speerpunt
+PO Capelle aan den IJssel ringen, rechte bovenkant
+PO Vlaardingen stalen planken, gesloten
+PO Schiedam stalen planken, open
+PO Oegstgeest golvende toog met dubbel krulmedaillon
+PO Noordwijkerhout lelie-punten met S-krullen
+PO Bussum vierkanten
+PO Amsterdam jaren-30 ruit
+PO Rotterdam hoog-laag diamant
+PO Blaricum vierkant en ruit
+PO Laren zonnepoort
+PO Wijk bij Duurstede deco-rooster
+PO Apeldoorn laag tuinhek
+PO Assen andreaskruis
+PO Giethoorn boogjes onderin
+PO Harderwijk balkonhek
+PO Krimpen matglas balkonhek
+PO Werkendam glas met middenstijl
+PO Nieuw-Lekkerland glas in twee lagen
+PO Ridderkerk spijlen tot de regel
+PO Barendrecht vierkante spijlen, strak modern
+PO Papendrecht mikado
+PO Leerdam strak 20×80
+PO Zwolle horizontale lamellen
+PO Oisterwijk verticale hout latten in stalen kader
+PO Valkenswaard horizontale hout latten in stalen kader
+PO Veenendaal ladder met platen
+PO Almere diagonaal
+PO Lelystad golflijnen
+PO Eindhoven straal abstract
+PO Tilburg cirkelbogen
+PO Nijkerk matglas met roedes
+PO Culemborg glas onder, spijlen boven
+PO Emmen dichte onderplaat
+PO Bleiswijk volledig dichte plaat
+PO Zoetermeer geperforeerde plaat
+Opslaan
+Delen
+Toon mijn poort in een straat
+Vorige
+Afronden
+Verder naar Stijl
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/poort-configurator
+PTR:
+BUTTON: Rustig openen
+BUTTON: Maten uit
+BUTTON: Toevoegen
+SPAN: Model
+BUTTON: 3
+BUTTON: 4
+BUTTON: 5
+BUTTON: PO Amersfoort
+BUTTON: LP Amersfoort
+BUTTON: HK Amersfoort
+BUTTON: Alle (63)
+BUTTON: Klassiek
+BUTTON: Sierwerk
+BUTTON: Art-deco
+BUTTON: Landelijk
+BUTTON: Modern
+SPAN: Weet ik nog niet
+SPAN: Wij adviseren u
+SPAN: PO Delft
+SPAN: klassiek speerpunt
+SPAN: PO Haarlem
+SPAN: toog met speerpunten
+SPAN: PO Zeist
+SPAN: holle toog met bollen
+SPAN: PO Hilversum
+SPAN: klokmodel met lelies
+SPAN: PO Naarden
+SPAN: speer met kragen
+SPAN: PO Oosterhout
+SPAN: spijltoog
+SPAN: PO Gorinchem
+SPAN: puntgevel
+SPAN: PO Vianen
+SPAN: strak klassiek
+SPAN: PO Heusden
+SPAN: hoog-laag met toog
+SPAN: PO Amersfoort
+SPAN: ringen
+SPAN: PO Breda
+SPAN: ring om de spijl
+SPAN: PO Leiden
+SPAN: halve ringen
+SPAN: PO Utrecht
+SPAN: gekruiste bogen
+SPAN: PO Gouda
+SPAN: C-krullen
+SPAN: PO Dordrecht
+SPAN: S-krullen
+SPAN: PO Den Bosch
+SPAN: lier van J-krullen
+SPAN: PO Maastricht
+SPAN: krullen en ringen
+SPAN: PO Sliedrecht
+SPAN: harten van C-krullen
+SPAN: PO Zwijndrecht
+SPAN: S-krullen en ringen
+SPAN: PO Schoonhoven
+SPAN: voluten en bladeren
+SPAN: PO Deventer
+SPAN: bladerrand
+SPAN: PO Middelburg
+SPAN: ringketting
+SPAN: PO Kampen
+SPAN: golfrand
+SPAN: PO Alblasserdam
+SPAN: ovalen en kragen
+SPAN: PO Wassenaar
+SPAN: zonnestraal
+SPAN: PO Voorschoten
+SPAN: dubbele ringrij
+SPAN: PO Oudewater
+SPAN: kruisjes en boogjes
+SPAN: PO Leiderdorp
+SPAN: klassieke ruiten met speerpunt
+SPAN: PO Capelle aan den IJssel
+SPAN: ringen, rechte bovenkant
+SPAN: PO Vlaardingen
+SPAN: stalen planken, gesloten
+SPAN: PO Schiedam
+SPAN: stalen planken, open
+SPAN: PO Oegstgeest
+SPAN: golvende toog met dubbel krulmedaillon
+SPAN: PO Noordwijkerhout
+SPAN: lelie-punten met S-krullen
+SPAN: PO Bussum
+SPAN: vierkanten
+SPAN: PO Amsterdam
+SPAN: jaren-30 ruit
+SPAN: PO Rotterdam
+SPAN: hoog-laag diamant
+SPAN: PO Blaricum
+SPAN: vierkant en ruit
+SPAN: PO Laren
+SPAN: zonnepoort
+SPAN: PO Wijk bij Duurstede
+SPAN: deco-rooster
+SPAN: PO Apeldoorn
+SPAN: laag tuinhek
+SPAN: PO Assen
+SPAN: andreaskruis
+SPAN: PO Giethoorn
+SPAN: boogjes onderin
+SPAN: PO Harderwijk
+SPAN: balkonhek
+SPAN: PO Krimpen
+SPAN: matglas balkonhek
+SPAN: PO Werkendam
+SPAN: glas met middenstijl
+SPAN: PO Nieuw-Lekkerland
+SPAN: glas in twee lagen
+SPAN: PO Ridderkerk
+SPAN: spijlen tot de regel
+SPAN: PO Barendrecht
+SPAN: vierkante spijlen, strak modern
+SPAN: PO Papendrecht
+SPAN: mikado
+SPAN: PO Leerdam
+SPAN: strak 20×80
+SPAN: PO Zwolle
+SPAN: horizontale lamellen
+SPAN: PO Oisterwijk
+SPAN: verticale hout latten in stalen kader
+SPAN: PO Valkenswaard
+SPAN: horizontale hout latten in stalen kader
+SPAN: PO Veenendaal
+SPAN: ladder met platen
+SPAN: PO Almere
+SPAN: diagonaal
+SPAN: PO Lelystad
+SPAN: golflijnen
+SPAN: PO Eindhoven
+SPAN: straal abstract
+SPAN: PO Tilburg
+SPAN: cirkelbogen
+SPAN: PO Nijkerk
+SPAN: matglas met roedes
+SPAN: PO Culemborg
+SPAN: glas onder, spijlen boven
+SPAN: PO Emmen
+SPAN: dichte onderplaat
+SPAN: PO Bleiswijk
+SPAN: volledig dichte plaat
+SPAN: PO Zoetermeer
+SPAN: geperforeerde plaat
+BUTTON: Opslaan
+BUTTON: Delen
+BUTTON: Toon mijn poort in een straat
+SPAN: Vorige
+BUTTON: Afronden
+BUTTON: Verder naar Stijl
+CANVAS 540x520
+SHADOW 0
+BODY:
+PO Amersfoort
+Rustig openen
+Maten uit
+Toevoegen
+
+STAP 2 / 5
+
+2 Model
+3
+4
+5
+Kies een model
+
+POORT · RINGEN
+
+PO Amersfoort
+
+Rij ringen bovenin; elke ring raakt beide spijlen en beide liggers.
+
+PO Amersfoort
+LP Amersfoort
+HK Amersfoort
+
+Elk model heeft een plaatsnaam en bestaat als poort (PO), looppoort (LP) en hekwerk (HK) in dezelfde stijl. Bovenlijn, sierwerk en punten past u in de stap Stijl nog aan.
+
+Alle (63)
+Klassiek
+Sierwerk
+Art-deco
+Landelijk
+Modern
+Weet ik nog niet
+Wij adviseren u
+PO Delft
+klassiek speerpunt
+PO Haarlem
+toog met speerpunten
+PO Zeist
+holle toog met bollen
+PO Hilversum
+klokmodel met lelies
+PO Naarden
+speer met kragen
+PO Oosterhout
+spijltoog
+PO Gorinchem
+puntgevel
+PO Vianen
+strak klassiek
+PO Heusden
+hoog-laag met toog
+PO Amersfoort
+ringen
+PO Breda
+ring om de spijl
+PO Leiden
+halve ringen
+PO Utrecht
+gekruiste bogen
+PO Gouda
+C-krullen
+PO Dordrecht
+S-krullen
+PO Den Bosch
+lier van J-krullen
+PO Maastricht
+krullen en ringen
+PO Sliedrecht
+harten van C-krullen
+PO Zwijndrecht
+S-krullen en ringen
+PO Schoonhoven
+voluten en bladeren
+PO Deventer
+bladerrand
+PO Middelburg
+ringketting
+PO Kampen
+golfrand
+PO Alblasserdam
+ovalen en kragen
+PO Wassenaar
+zonnestraal
+PO Voorschoten
+dub

@@ -1,0 +1,175 @@
+Rustig openen
+Maten uit
+Toevoegen
+3 Stijl
+4
+5
+Recht Strakke bovenregel
+Toog Hoogste punt in het midden
+Holle toog Laagste punt in het midden
+Klokmodel Klassieke klokvorm
+Puntgevel Recht oplopend
+Geen sierrand Alleen spijlen
+Ringen Tussen elke spijl
+Ring om de spijl Grote ring, spijl erdoor
+Halve ringen Boogjes onder de regel
+Gekruiste bogen Gotisch boogwerk
+C-krullen Symmetrisch naar het midden
+Bladeren Gesmede bladvorm
+Voluten Krul met staart
+Ringketting Ringen over de hele breedte
+Golfrand Golflijn tussen twee liggers
+Zonnestraal Halve zon met stralen
+Kruisrooster Ruitjes bovenin
+S-krullen Afwisselend gespiegeld
+J-krullen Paren rond een spijl
+Vierkanten Art-deco
+Ruiten Jaren-30, in het midden
+Andreaskruis Landelijk, onderin
+Korte tussenspijlen Onderin, tegen honden
+Opslaan
+Delen
+Toon mijn poort in een straat
+Vorige
+Afronden
+Verder naar Palen en bediening
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/poort-configurator
+PTR:
+BUTTON: Rustig openen
+BUTTON: Maten uit
+BUTTON: Toevoegen
+SPAN: Stijl
+BUTTON: 4
+BUTTON: 5
+SPAN: Recht
+SPAN: Strakke bovenregel
+SPAN: Toog
+SPAN: Hoogste punt in het midden
+SPAN: Holle toog
+SPAN: Laagste punt in het midden
+SPAN: Klokmodel
+SPAN: Klassieke klokvorm
+SPAN: Puntgevel
+SPAN: Recht oplopend
+SPAN: Geen sierrand
+SPAN: Alleen spijlen
+SPAN: Ringen
+SPAN: Tussen elke spijl
+SPAN: Ring om de spijl
+SPAN: Grote ring, spijl erdoor
+SPAN: Halve ringen
+SPAN: Boogjes onder de regel
+SPAN: Gekruiste bogen
+SPAN: Gotisch boogwerk
+SPAN: C-krullen
+SPAN: Symmetrisch naar het midden
+SPAN: Bladeren
+SPAN: Gesmede bladvorm
+SPAN: Voluten
+SPAN: Krul met staart
+SPAN: Ringketting
+SPAN: Ringen over de hele breedte
+SPAN: Golfrand
+SPAN: Golflijn tussen twee liggers
+SPAN: Zonnestraal
+SPAN: Halve zon met stralen
+SPAN: Kruisrooster
+SPAN: Ruitjes bovenin
+SPAN: S-krullen
+SPAN: Afwisselend gespiegeld
+SPAN: J-krullen
+SPAN: Paren rond een spijl
+SPAN: Vierkanten
+SPAN: Art-deco
+SPAN: Ruiten
+SPAN: Jaren-30, in het midden
+SPAN: Andreaskruis
+SPAN: Landelijk, onderin
+SPAN: Korte tussenspijlen
+SPAN: Onderin, tegen honden
+SUMMARY: Meer opties
+BUTTON: Opslaan
+BUTTON: Delen
+BUTTON: Toon mijn poort in een straat
+SPAN: Vorige
+BUTTON: Afronden
+BUTTON: Verder naar Palen en bediening
+CANVAS 540x520
+SHADOW 0
+BODY:
+PO Amersfoort
+Rustig openen
+Maten uit
+Toevoegen
+
+STAP 3 / 5
+
+3 Stijl
+4
+5
+Stijl en details
+Bovenlijn
+Recht
+Strakke bovenregel
+Toog
+Hoogste punt in het midden
+Holle toog
+Laagste punt in het midden
+Klokmodel
+Klassieke klokvorm
+Puntgevel
+Recht oplopend
+Hoogte van de toog/kop
+220 mm
+Sierwerk
+
+Ringen en krullen worden exact tussen de spijlen en regels gelast; niets zweeft los.
+
+Geen sierrand
+Alleen spijlen
+Ringen
+Tussen elke spijl
+Ring om de spijl
+Grote ring, spijl erdoor
+Halve ringen
+Boogjes onder de regel
+Gekruiste bogen
+Gotisch boogwerk
+C-krullen
+Symmetrisch naar het midden
+Bladeren
+Gesmede bladvorm
+Voluten
+Krul met staart
+Ringketting
+Ringen over de hele breedte
+Golfrand
+Golflijn tussen twee liggers
+Zonnestraal
+Halve zon met stralen
+Kruisrooster
+Ruitjes bovenin
+S-krullen
+Afwisselend gespiegeld
+J-krullen
+Paren rond een spijl
+Vierkanten
+Art-deco
+Ruiten
+Jaren-30, in het midden
+Andreaskruis
+Landelijk, onderin
+Korte tussenspijlen
+Onderin, tegen honden
+Meer opties
+Opslaan
+Delen
+Straatimpressie (AI)
+Dorpsstraat
+Vrijstaand huis
+Stadsstraat
+Toon mijn poort in een straat
+Vorige
+Afronden
+Verder naar Palen en bediening

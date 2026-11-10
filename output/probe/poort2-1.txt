@@ -1,0 +1,140 @@
+Rustig openen
+Maten uit
+Toevoegen
+1 Wat en maten
+2
+3
+4
+5
+Inrijpoort dubbel
+Inrijpoort enkel
+Looppoort
+Hekwerk
+Hekwerk met looppoort
+Hekwerk met inrijpoort
+Hekwerk met inrijpoort en looppoort
+Balkonhek
+Glazen balustrade
+Smal 250 cm
+Standaard 300 cm
+Breed 400 cm
+Laag 100 cm
+Middel 150 cm
+Hoog 180 cm
+Recht
+Haaks links
+Haaks rechts
+U-vorm
+Weet ik nog niet, adviseer me
+Eigen ontwerp op aanvraag Staat uw idee er niet tussen? Wij tekenen het voor u uit. Beschrijf het bij de aanvraag.
+Opslaan
+Delen
+Toon mijn poort in een straat
+Vorige
+Verder naar Model
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/poort-configurator
+PTR:
+BUTTON: Rustig openen
+BUTTON: Maten uit
+BUTTON: Toevoegen
+SPAN: Wat en maten
+BUTTON: 2
+BUTTON: 3
+BUTTON: 4
+BUTTON: 5
+SPAN: Inrijpoort dubbel
+SPAN: Inrijpoort enkel
+SPAN: Looppoort
+SPAN: Hekwerk
+SPAN: Hekwerk met looppoort
+SPAN: Hekwerk met inrijpoort
+SPAN: Hekwerk met inrijpoort en looppoort
+SPAN: Balkonhek
+SPAN: Glazen balustrade
+SPAN: 250 cm
+SPAN: 300 cm
+SPAN: 400 cm
+SPAN: 100 cm
+SPAN: 150 cm
+SPAN: 180 cm
+BUTTON: Recht
+BUTTON: Haaks links
+BUTTON: Haaks rechts
+BUTTON: U-vorm
+BUTTON: Weet ik nog niet, adviseer me
+DIV: Eigen ontwerp op aanvraag
+SUMMARY: Hoeken, bochten en eigen delen
+BUTTON: Opslaan
+BUTTON: Delen
+BUTTON: Toon mijn poort in een straat
+BUTTON: Verder naar Model
+CANVAS 540x520
+SHADOW 0
+BODY:
+PO Amersfoort
+Rustig openen
+Maten uit
+Toevoegen
+
+STAP 1 / 5
+
+1 Wat en maten
+2
+3
+4
+5
+Wat wilt u laten maken?
+
+Kies wat u wilt laten maken en vul de maten in. De 3D past zich direct aan.
+
+Inrijpoort dubbel
+ 
+Inrijpoort enkel
+ 
+Looppoort
+ 
+Hekwerk
+ 
+Hekwerk met looppoort
+ 
+Hekwerk met inrijpoort
+ 
+Hekwerk met inrijpoort en looppoort
+ 
+Balkonhek
+ 
+Glazen balustrade
+ 
+Breedte poort (cm)
+Smal
+250 cm
+Standaard
+300 cm
+Breed
+400 cm
+Hoogte (cm)
+Laag
+100 cm
+Middel
+150 cm
+Hoog
+180 cm
+Opstelling
+Recht
+Haaks links
+Haaks rechts
+U-vorm
+Weet ik nog niet, adviseer me
+Eigen ontwerp op aanvraag
+Staat uw idee er niet tussen? Wij tekenen het voor u uit. Beschrijf het bij de aanvraag.
+Hoeken, bochten en eigen delen
+Opslaan
+Delen
+Straatimpressie (AI)
+Dorpsstraat
+Vrijstaand huis
+Stadsstraat
+Toon mijn poort in een straat
+Vorige
+Verder naar Model

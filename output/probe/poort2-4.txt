@@ -1,0 +1,212 @@
+Rustig openen
+Maten uit
+Toevoegen
+4 Palen en bediening
+5
+Geen palen Aan bestaande muur
+Stalen palen Koker, gepoedercoat
+Gemetseld Pilaren van baksteen
+Gestuct Wit gepleisterde pilaren
+Weet ik nog niet Wij adviseren u
+Geen kap
+Platte kap
+Piramide
+Bol
+Eikel
+Denneappel
+Bol
+Dennenappel
+Zelfde als paalkap
+Geen kap
+Platte kap
+Piramide
+Bol
+Eikel
+Denneappel
+Geen waaier
+Links
+Rechts
+Links en rechts
+Zwart (RAL 9005) Meest gekozen
+Grachtengroen (RAL 6009) Klassiek Hollands
+Antraciet (RAL 7016) Modern
+Wit (RAL 9010) Licht
+Thermisch verzinkt Blank, zonder coating
+Zwart (RAL 9005)
+Handmatig Scharnieren en slot
+Automatisch Elektrisch openen
+Automatisch + intercom Met toegangscontrole
+Weet ik nog niet Wij adviseren u
+Opslaan
+Delen
+Toon mijn poort in een straat
+Vorige
+Afronden
+Verder naar Overzicht en aanvraag
+--- frames
+FRAME https://app.smederijpapendrecht.nl/embed/poort-configurator
+PTR:
+BUTTON: Rustig openen
+BUTTON: Maten uit
+BUTTON: Toevoegen
+SPAN: Palen en bediening
+BUTTON: 5
+SPAN: Geen palen
+SPAN: Aan bestaande muur
+SPAN: Stalen palen
+SPAN: Koker, gepoedercoat
+SPAN: Gemetseld
+SPAN: Pilaren van baksteen
+SPAN: Gestuct
+SPAN: Wit gepleisterde pilaren
+SPAN: Weet ik nog niet
+SPAN: Wij adviseren u
+SPAN: Geen kap
+SPAN: Platte kap
+SPAN: Piramide
+SPAN: Bol
+SPAN: Eikel
+SPAN: Denneappel
+SPAN: Bol
+SPAN: Dennenappel
+SPAN: Zelfde als paalkap
+SPAN: Geen kap
+SPAN: Platte kap
+SPAN: Piramide
+SPAN: Bol
+SPAN: Eikel
+SPAN: Denneappel
+SPAN: Geen waaier
+SPAN: Links
+SPAN: Rechts
+SPAN: Links en rechts
+SPAN: Zwart (RAL 9005)
+SPAN: Meest gekozen
+SPAN: Grachtengroen (RAL 6009)
+SPAN: Klassiek Hollands
+SPAN: Antraciet (RAL 7016)
+SPAN: Modern
+SPAN: Wit (RAL 9010)
+SPAN: Licht
+SPAN: Thermisch verzinkt
+SPAN: Blank, zonder coating
+SPAN: Zwart (RAL 9005)
+SPAN: Handmatig
+SPAN: Scharnieren en slot
+SPAN: Automatisch
+SPAN: Elektrisch openen
+SPAN: Automatisch + intercom
+SPAN: Met toegangscontrole
+SPAN: Weet ik nog niet
+SPAN: Wij adviseren u
+BUTTON: Opslaan
+BUTTON: Delen
+BUTTON: Toon mijn poort in een straat
+SPAN: Vorige
+BUTTON: Afronden
+BUTTON: Verder naar Overzicht en aanvraag
+CANVAS 540x520
+SHADOW 0
+BODY:
+PO Amersfoort
+Rustig openen
+Maten uit
+Toevoegen
+
+STAP 4 / 5
+
+4 Palen en bediening
+5
+Palen, kleur en bediening
+Palen
+Geen palen
+Aan bestaande muur
+Stalen palen
+Koker, gepoedercoat
+Gemetseld
+Pilaren van baksteen
+Gestuct
+Wit gepleisterde pilaren
+Weet ik nog niet
+Wij adviseren u
+Paalmaat (poortpaal)
+40 × 40 mm
+50 × 50 mm
+60 × 60 mm
+70 × 70 mm
+80 × 80 mm
+90 × 90 mm
+100 × 100 mm
+120 × 120 mm
+Paalkap
+Geen kap
+ 
+Platte kap
+ 
+Piramide
+ 
+Bol
+ 
+Eikel
+ 
+Denneappel
+ 
+Sierkop middenpoort
+
+Op de twee verhoogde sluitkokers tussen de poortvleugels.
+
+Bol
+ 
+Dennenappel
+ 
+Kap palen naast de poort
+
+Op de eerste hekwerkpaal links en rechts van de poort.
+
+Zelfde als paalkap
+ 
+Geen kap
+ 
+Platte kap
+ 
+Piramide
+ 
+Bol
+ 
+Eikel
+ 
+Denneappel
+ 
+Slootwaaier
+
+Waaier van punten aan de eindpaal, boven de sloot, zodat niemand om het hek heen klimt.
+
+Geen waaier
+ 
+Links
+ 
+Rechts
+ 
+Links en rechts
+ 
+Kleur
+
+Gepoedercoat. Wij leveren alle RAL-kleuren.
+
+Zwart (RAL 9005)
+Meest gekozen
+Grachtengroen (RAL 6009)
+Klassiek Hollands
+Antraciet (RAL 7016)
+Modern
+Wit (RAL 9010)
+Licht
+Thermisch verzinkt
+Blank, zonder coating
+Zwart (RAL 9005)
+Brievenbus
+Brievenbus in één paal
+Bediening van de poort
+Handmatig
+Scharnieren en slot
+Autom
