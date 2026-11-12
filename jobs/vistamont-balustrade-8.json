@@ -1,0 +1,30 @@
+{"id": "vistamont-balustrade-8", "type": "reel", "brand": "vistamont", "vh": 1000, "url": "https://app.smederijpapendrecht.nl/embed-balustrade.html?brand=vistamont", "cta": "vistamont.nl",
+"capture": [
+ {"orbit": {"dx": -7, "steps": 30}, "do": [{"click": "Vide of galerij", "exact": true}], "wait": 30000},
+ {"hero": true, "do": [{"click": "Trap", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Frans balkon", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Dakterras", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Vide of galerij", "exact": true, "pause": 1500}, {"click": "Uitzicht", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Detail", "exact": true}], "wait": 6000},
+ {"do": [{"click": "Volgende", "exact": true}], "wait": 5000},
+ {"do": [{"click": "Volgende", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Volgende", "exact": true, "pause": 800}, {"click": "Uitzicht", "exact": true, "pause": 800}, {"click": "Brons getint", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Grijs getint", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Mat (satijn)", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Helder", "exact": true}], "wait": 5000}
+],
+"play": [
+ {"c": 0, "text": "Glas langs je vide? Bekijk het eerst in 3D", "beats": 6},
+ {"c": 1, "text": "Ook langs de trap", "beats": 3},
+ {"c": 2, "text": "Als Frans balkon", "beats": 3},
+ {"c": 3, "text": "Of op je dakterras", "beats": 3},
+ {"c": 4, "text": "Vrij zicht door het glas", "beats": 4},
+ {"c": 5, "text": "Elk detail in beeld", "beats": 3},
+ {"c": 6, "text": "Kies je vorm en maten", "beats": 3},
+ {"c": 7, "text": "Kies je systeem", "beats": 3},
+ {"c": 11, "text": "Helder", "beats": 3},
+ {"c": 8, "text": "Brons getint", "beats": 3},
+ {"c": 9, "text": "Grijs getint", "beats": 3},
+ {"c": 10, "text": "Mat satijn", "beats": 3},
+ {"end": true, "text": "Stel je eigen glasbalustrade samen", "beats": 7}
+], "musicStart": 47.9, "logoHeight": 130}
