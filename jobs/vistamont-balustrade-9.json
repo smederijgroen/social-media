@@ -1,0 +1,30 @@
+{"id": "vistamont-balustrade-9", "type": "reel", "brand": "vistamont", "vh": 1000, "url": "https://app.smederijpapendrecht.nl/embed-balustrade.html?brand=vistamont", "cta": "vistamont.nl",
+"capture": [
+ {"orbit": {"dx": -7, "steps": 30}, "do": [{"click": "Balkon", "exact": true}], "wait": 30000},
+ {"hero": true, "do": [{"click": "Vide of galerij", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Trap", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Dakterras", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Frans balkon", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Balkon", "exact": true, "pause": 1500}, {"click": "Uitzicht", "exact": true}], "wait": 8000},
+ {"do": [{"click": "Buiten", "exact": true}, {"click": "Volgende", "exact": true}], "wait": 5000},
+ {"do": [{"click": "Volgende", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Volgende", "exact": true}, {"click": "Brons getint", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Grijs getint", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Mat (satijn)", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Helder", "exact": true}], "wait": 5000}
+],
+"play": [
+ {"c": 0, "text": "Frameloos glas, binnen of buiten? Bekijk het eerst in 3D", "beats": 6},
+ {"c": 1, "text": "Langs je vide", "beats": 3},
+ {"c": 2, "text": "Langs de trap", "beats": 3},
+ {"c": 3, "text": "Op je dakterras", "beats": 3},
+ {"c": 4, "text": "Als Frans balkon", "beats": 3},
+ {"c": 5, "text": "Zo kijk je straks naar buiten", "beats": 4},
+ {"c": 6, "text": "Kies je vorm en maten", "beats": 3},
+ {"c": 7, "text": "Kies je systeem", "beats": 3},
+ {"c": 11, "text": "Helder", "beats": 3},
+ {"c": 8, "text": "Brons getint", "beats": 3},
+ {"c": 9, "text": "Grijs getint", "beats": 3},
+ {"c": 10, "text": "Mat satijn", "beats": 3},
+ {"end": true, "text": "Stel je eigen glasbalustrade samen", "beats": 7}
+], "musicStart": 47.9, "logoHeight": 130}
