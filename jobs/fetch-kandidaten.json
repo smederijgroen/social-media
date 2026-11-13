@@ -1,0 +1,32 @@
+{
+ "items": [
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/modern-hekwerk-papendrecht-01.jpg",
+   "out": "src/kandidaat-modern-hekwerk-papendrecht-01.jpg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/img-3916-1774362482990.jpeg",
+   "out": "src/kandidaat-img-3916-1774362482990.jpeg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/img-3917-1774362485777.jpeg",
+   "out": "src/kandidaat-img-3917-1774362485777.jpeg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/img-3918-1774362484561.jpeg",
+   "out": "src/kandidaat-img-3918-1774362484561.jpeg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/trapleuning-heiloo-02.jpeg",
+   "out": "src/kandidaat-trapleuning-heiloo-02.jpeg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/trapleuning-heiloo-03.jpeg",
+   "out": "src/kandidaat-trapleuning-heiloo-03.jpeg"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/projects/trapleuning-heiloo-05.jpeg",
+   "out": "src/kandidaat-trapleuning-heiloo-05.jpeg"
+  }
+ ]
+}
