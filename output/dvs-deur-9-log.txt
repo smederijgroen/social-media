@@ -1,0 +1,12 @@
+capture 0 ok
+capture 1 ok
+capture 2 ok
+FOUT 3 knop niet gevonden: Kies een model
+capture 3 ok
+FOUT 4 knop niet gevonden: Utrecht
+capture 4 ok
+capture 5 ok
+capture 6 ok
+capture 7 ok
+capture 8 ok
+capture 9 ok
