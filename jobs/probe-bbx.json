@@ -1,0 +1,11 @@
+{"name":"bbx","url":"https://app.smederijpapendrecht.nl/balustrade-binnen/index.html","wait":30000,"walk":[
+{"click":"Overloop of vide","wait":6000},
+{"click":"Nieuwbouw / 2-onder-1-kap","wait":15000,"hero":true},
+{"click":"Ronde spijlen","wait":7000,"hero":true},
+{"click":"Platstaal","wait":7000,"hero":true},
+{"click":"Krullen","wait":7000,"hero":true},
+{"click":"Dark Bronze C34","wait":7000,"hero":true},
+{"click":"VIDE","exact":true,"wait":7000,"hero":true},
+{"click":"DETAIL","exact":true,"wait":7000,"hero":true},
+{"click":"BENEDEN","exact":true,"wait":7000,"hero":true}
+]}
