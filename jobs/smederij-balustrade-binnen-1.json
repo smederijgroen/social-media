@@ -1,0 +1,29 @@
+{"id": "smederij-balustrade-binnen-1", "type": "reel", "brand": "smederij", "logoHeight": 150, "vh": 1000, "url": "https://app.smederijpapendrecht.nl/balustrade-binnen/index.html", "cta": "smederijpapendrecht.nl", "firstWait": 30000,
+"capture": [
+{"wait": 500},
+{"hero": true, "do": [{"click": "Direct naar de 3D"}, {"pause": 3000}, {"click": "Vide met trap"}], "wait": 12000},
+{"do": [{"click": "Spijlen met bol"}], "wait": 7000},
+{"hero": true, "wait": 1000},
+{"hero": true, "do": [{"click": "Gedraaid"}], "wait": 7000},
+{"hero": true, "do": [{"click": "Krullen"}], "wait": 7000},
+{"hero": true, "do": [{"click": "Lasercut patroon"}], "wait": 7000},
+{"do": [{"click": "Dark Bronze C34"}], "wait": 7000},
+{"hero": true, "wait": 1000},
+{"orbit": {"dx": -7, "steps": 30}, "do": [{"click": "OVERLOOP SCHUIN", "exact": true}], "wait": 7000},
+{"hero": true, "do": [{"click": "DETAIL", "exact": true}], "wait": 7000}
+],
+"play": [
+{"c": 9, "text": "Nieuwe balustrade langs je vide? Bekijk hem eerst in 3D", "beats": 6},
+{"c": 0, "text": "Kies wat je laat maken", "beats": 3},
+{"c": 1, "text": "Daar staat hij al", "beats": 4},
+{"c": 2, "text": "Kies een stijl", "beats": 3},
+{"c": 3, "text": "Spijlen met bol", "beats": 3},
+{"c": 4, "text": "Gedraaid", "beats": 3},
+{"c": 5, "text": "Krullen", "beats": 3},
+{"c": 6, "text": "Lasercut patroon", "beats": 3},
+{"c": 7, "text": "Kies je kleur", "beats": 3},
+{"c": 8, "text": "Dark Bronze", "beats": 3},
+{"c": 10, "text": "Elk detail in beeld", "beats": 4},
+{"end": true, "text": "Stel je eigen balustrade samen", "beats": 7}
+],
+"musicStart": 47.9}
