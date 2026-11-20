@@ -13,9 +13,9 @@ return `<!doctype html><meta charset=utf-8><link href="https://fonts.googleapis.
 (async()=>{const b=await chromium.launch();const done=[];
 for(const f of fs.readdirSync('jobs').filter(x=>x.endsWith('.json'))){const j=JSON.parse(fs.readFileSync('jobs/'+f));
  if(j.type==='crop'){ // losse foto's 4:5 bijsnijden als JPEG (Instagram-carrousel)
-  for(const [i,u] of (j.images||[]).entries()){const out=`output/${j.id}-${i+1}.jpg`;if(fs.existsSync(out))continue;
+  for(const [i,it] of (j.images||[]).entries()){const u=typeof it==='string'?it:it.url,fit=(typeof it==='object'&&it.fit)||j.fit||'cover';const out=`output/${j.id}-${i+1}.jpg`;if(fs.existsSync(out))continue;
    const p=await b.newPage({viewport:{width:1080,height:1350}});
-   await p.setContent(`<style>*{margin:0}body{width:1080px;height:1350px;background:#f7f5f1 url("${u}") center/${j.fit||'cover'} no-repeat}</style>`,{waitUntil:'networkidle'});
+   await p.setContent(`<style>*{margin:0}body{width:1080px;height:1350px;background:#f7f5f1 url("${u}") center/${fit} no-repeat}</style>`,{waitUntil:'networkidle'});
    await p.waitForTimeout(800);await p.screenshot({path:out,type:'jpeg',quality:92});await p.close();done.push(out)}
   continue}
  if(j.type!=='photo'||fs.existsSync(`output/${j.id}-post.jpg`))continue;

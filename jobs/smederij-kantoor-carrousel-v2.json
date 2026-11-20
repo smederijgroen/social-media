@@ -1,0 +1,26 @@
+{
+ "id": "smederij-kantoor-carrousel-v2",
+ "type": "crop",
+ "images": [
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/blog/kantoor-glaswanden-geplaatst-3d-mwmni6nr.webp",
+   "fit": "cover"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/blog/kantoor-lege-verdieping-3d-mwmng4aw.webp",
+   "fit": "cover"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/blog/stalen-glaswand-vergaderruimte-kantoor-3d-mwmlr9ue.webp",
+   "fit": "cover"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/blog/stalen-schuifdeur-greep-hoekstaal-30x30-mwmlis15.webp",
+   "fit": "cover"
+  },
+  {
+   "url": "https://yfuarhumczlkxtymborq.supabase.co/storage/v1/object/public/media/blog/kleurstalen-stalen-profielen-mwmng785.webp",
+   "fit": "contain"
+  }
+ ]
+}
