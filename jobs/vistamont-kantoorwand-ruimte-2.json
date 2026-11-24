@@ -1,0 +1,26 @@
+{"id": "vistamont-kantoorwand-ruimte-2", "fit": "contain", "type": "reel", "brand": "vistamont", "vh": 1000, "url": "https://app.smederijpapendrecht.nl/embed-kantoorwand.html?brand=vistamont", "cta": "vistamont.nl", "capture": [
+{"orbit": {"dx": -3, "steps": 30}, "do": [{"click": "Rondom", "exact": true, "pause": 800}, {"click": "Hoek", "exact": true}], "wait": 30000},
+{"hero": true, "do": [{"click": "Voor", "exact": true}], "wait": 6000},
+{"hero": true, "do": [{"click": "Boven", "exact": true}], "wait": 6000},
+{"do": [{"click": "Hoek", "exact": true, "pause": 800}, {"click": "6. Dak"}], "wait": 5000},
+{"hero": true, "do": [{"click": "Stalen dak met glas"}], "wait": 8000},
+{"hero": true, "do": [{"click": "Stalen dak dicht"}], "wait": 8000},
+{"do": [{"click": "Geen dak", "pause": 800}, {"click": "7. Interieur"}], "wait": 5000},
+{"hero": true, "do": [{"click": "Betonvloer", "exact": true}], "wait": 7000},
+{"hero": true, "do": [{"click": "Baksteen", "exact": true}], "wait": 7000},
+{"hero": true, "do": [{"click": "Tapijt", "exact": true}], "wait": 7000},
+{"orbit": {"dx": -3, "steps": 30}, "do": [{"click": "6. Dak", "pause": 1000}, {"click": "Stalen dak met glas"}], "wait": 9000}
+], "play": [
+{"c": 0, "text": "Een eigen vergaderruimte in je kantoor? Bekijk hem eerst in 3D", "beats": 6},
+{"c": 1, "text": "Rondom glas", "beats": 4},
+{"c": 2, "text": "Ook van bovenaf", "beats": 3},
+{"c": 3, "text": "Met of zonder dak", "beats": 3},
+{"c": 4, "text": "Een dak met glas", "beats": 3},
+{"c": 5, "text": "Of juist dicht", "beats": 3},
+{"c": 6, "text": "Zet hem in een ruimte zoals de jouwe", "beats": 4},
+{"c": 7, "text": "Betonvloer", "beats": 3},
+{"c": 8, "text": "Tegen baksteen", "beats": 3},
+{"c": 9, "text": "Op tapijt", "beats": 3},
+{"c": 10, "text": "Zo staat hij in je kantoor", "beats": 4},
+{"end": true, "text": "Stel je eigen kantoorwand samen", "beats": 7}
+], "musicStart": 47.9, "logoHeight": 130}
