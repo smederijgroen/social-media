@@ -1,0 +1,32 @@
+{"id": "vistamont-vide-interieur", "type": "reel", "brand": "vistamont", "vh": 1000, "url": "https://app.smederijpapendrecht.nl/embed-balustrade.html?brand=vistamont", "cta": "vistamont.nl",
+"capture": [
+ {"orbit": {"dx": -7, "steps": 30}, "do": [{"click": "Vide of galerij", "exact": true}], "wait": 30000},
+ {"hero": true, "do": [{"click": "Uitzicht", "exact": true}], "wait": 8000},
+ {"hero": true, "do": [{"click": "Detail", "exact": true}], "wait": 6000},
+ {"do": [{"click": "Volgende", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Uitzicht", "exact": true, "pause": 800}, {"click": "L-vorm", "exact": true}], "wait": 7000},
+ {"do": [{"click": "Volgende", "exact": true}], "wait": 5000},
+ {"hero": true, "do": [{"click": "Detail", "exact": true, "pause": 800}, {"click": "Aan de zijkant"}], "wait": 7000},
+ {"hero": true, "do": [{"click": "Op de vloer"}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Volgende", "exact": true, "pause": 1200}, {"click": "Wit RAL 9016", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Zwart RAL 9005", "exact": true, "pause": 800}, {"click": "Geen", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Uitzicht", "exact": true, "pause": 800}, {"click": "Brons getint", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Volgende", "exact": true, "pause": 1200}, {"click": "Parket", "exact": true}], "wait": 7000},
+ {"hero": true, "do": [{"click": "Baksteen", "exact": true}], "wait": 6000},
+ {"hero": true, "do": [{"click": "Boven", "exact": true}], "wait": 6000}
+],
+"play": [
+ {"c": 0, "text": "Glas langs je vide? Bekijk het eerst in 3D", "beats": 6},
+ {"c": 1, "text": "Zo staat het in je woning", "beats": 4},
+ {"c": 2, "text": "Van dichtbij", "beats": 3},
+ {"c": 4, "text": "Kies je vorm", "beats": 3},
+ {"c": 6, "text": "Profiel aan de zijkant", "beats": 3},
+ {"c": 7, "text": "Of op de vloer", "beats": 3},
+ {"c": 8, "text": "Profiel in wit", "beats": 3},
+ {"c": 9, "text": "Zwart, zonder bovenrand", "beats": 3},
+ {"c": 10, "text": "Brons getint glas", "beats": 3},
+ {"c": 11, "text": "Kies je vloer", "beats": 3},
+ {"c": 12, "text": "En je wand", "beats": 3},
+ {"c": 13, "text": "Ook van bovenaf", "beats": 4},
+ {"end": true, "text": "Stel je eigen glasbalustrade samen", "beats": 7}
+], "musicStart": 47.9, "logoHeight": 130}
